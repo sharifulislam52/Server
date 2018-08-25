@@ -31,10 +31,13 @@ dependencies {
 
 Usage
 -----
-**MainActivity.java**
+**Import**
 ```java
 import shariful.server.Server;
+```
 
+**MainActivity.java**
+```java
 public class MainActivity extends AppCompatActivity {
 	...
 
