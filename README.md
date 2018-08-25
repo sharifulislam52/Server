@@ -33,6 +33,8 @@ Usage
 -----
 **MainActivity.java**
 ```java
+import shariful.server.Server;
+
 public class MainActivity extends AppCompatActivity {
 	...
 
