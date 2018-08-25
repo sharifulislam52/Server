@@ -35,23 +35,23 @@ Usage
 ```java
 public class MainActivity extends AppCompatActivity {
 	...
-	
+
 	JSONObject object = new JSONObject();
 	...
-	
+
 	conn_server conn = new conn_server();
 	conn.execute("request_name", "http:\/\/Target_Page_Link.php", object.toString());
 	
 	private class conn_server extends Server{
-        @Override
-        public void HttpResult(String name, String data){}
-	
-        @Override
-        public void HttpResult(String name, JSONObject object){}
+		@Override
+		public void HttpResult(String name, String data){}
 
-        @Override
-        public void HttpRequestFailed(String name){}
-    }
+		@Override
+		public void HttpResult(String name, JSONObject object){}
+
+		@Override
+		public void HttpRequestFailed(String name){}
+	}
 }
 ```
 
