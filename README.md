@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
 	...
 	
 	conn_server conn = new conn_server();
-	conn.execute("request_name", "http://Target_Page_Link.php", object.toString());
+	conn.execute("request_name", "http:\/\/Target_Page_Link.php", object.toString());
 	
 	private class conn_server extends Server{
-		@Override
+        @Override
         public void HttpResult(String name, String data){}
 	
         @Override
